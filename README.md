@@ -4,48 +4,39 @@ Aplicativo **FastHTML (100% Python)** com **Dicionário LEO**, **Modo Conversaç
 
 ---
 
-## 📱 Instalação Automática de 1 Clique no Termux (Android)
+## ⚡ Instalação Super Rápida de 1 Linha no Termux (curl | bash)
 
-Abra o seu **Termux** no celular, copie e cole o comando abaixo:
+Abra o seu **Termux** no celular, copie e cole **este único comando**:
 
 ```bash
-git clone <URL_DO_SEU_REPOSITORIO_GITHUB> leo-translator && cd leo-translator && bash setup_termux.sh
+curl -sSL https://raw.githubusercontent.com/SEU_USUARIO/SEU_REPOSITORIO/main/install.sh | bash
 ```
 
-O script irá:
-1. Atualizar o Termux e instalar Python, Git, FFmpeg e compiladores.
-2. Instalar todas as dependências Python (`FastHTML`, `Piper TTS`, `ArgosTranslate`).
-3. Baixar os modelos neurais **Piper ONNX** (Português, Alemão, Inglês).
-4. Iniciar o servidor automaticamente em `http://localhost:5001`.
+> **O que este comando faz automaticamente:**
+> 1. Atualiza o Termux e instala Python, Git, FFmpeg e os compiladores.
+> 2. Baixa o projeto direto do seu GitHub público.
+> 3. Instala as dependências Python (`FastHTML`, `Piper TTS`, `ArgosTranslate`).
+> 4. Baixa os modelos neurais **Piper ONNX** (Português, Alemão, Inglês).
+> 5. Abre o aplicativo automaticamente no seu navegador em `http://localhost:5001`.
 
 ---
 
-## ⚡ Recursos do Projeto
+## 📱 Método Alternativo (Manual no Termux)
 
-- **📱 Modo Conversação 2 Pessoas (Frente a Frente)**:
-  - **Pessoa A (Metade Superior)**: Girada em 180° para quem está do outro lado da mesa.
-  - **Pessoa B (Metade Inferior)**: Orientação normal (0°) virada para você.
-  - **Voz Neural Piper ONNX**: Fala a tradução em voz alta em tempo real!
-
-- **📖 Dicionário LEO Multi-Idioma**:
-  - Filtro por **Verbos**, **Expressões**, **Substantivos** (com artigos `das/die/der`) e **Exemplos**.
-  - Tabela de conjugação **Flexionstabelle** em 1 clique (Präsens, Perfekt, Präteritum, Plusquamperfekt, Futur I).
-  - Correção gramatical Duden para evitar plurais disfarçados de verbos.
-  - Desambiguação por contexto (ex: *correr* $\rightarrow$ *rennen* `[alta velocidade]`, *laufen* `[jogging/a pé]`, *fließen* `[líquidos]`).
-
-- **✨ Integração Gemini AI**:
-  - Explicações gramaticais detalhadas diretamente salvas no `.env`.
+```bash
+git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git leo-translator && cd leo-translator && bash setup_termux.sh
+```
 
 ---
 
-## 🛠️ Como Subir para o seu GitHub
+## 🛠️ Como Subir para o seu GitHub Público
 
 No seu computador:
 
 ```bash
 git add .
-git commit -m "feat: LEO Translator FastHTML com Modo Conversação 2 Pessoas e Piper ONNX para Termux"
+git commit -m "feat: Adicionado script de instalação de 1 linha (curl | bash) para Termux"
 git branch -M main
-git remote add origin https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
+git remote add origin https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
 git push -u origin main
 ```
