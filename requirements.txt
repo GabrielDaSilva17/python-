@@ -1,0 +1,8 @@
+python-fasthtml
+uvicorn
+starlette
+piper-tts
+gtts
+argostranslate
+requests
+python-dotenv
